@@ -5,6 +5,7 @@ namespace App\Controllers\Masyarakat;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\SuratDombangunanModel;
+use CodeIgniter\I18n\Time; // taruh di paling atas file controller
 
 class SuratDomisiliBangunan extends BaseController
 {
@@ -35,7 +36,8 @@ class SuratDomisiliBangunan extends BaseController
             'kabupaten'    => $this->request->getPost('kabupaten'),
             'provinsi'     => $this->request->getPost('provinsi'),
             'alamat_bangunan' => $this->request->getPost('alamat_bangunan'),
-            'rt' => $this->request->getPost('rt')
+            'rt' => $this->request->getPost('rt'),
+            'tanggal_pembuatan_surat' => Time::now('Asia/Makassar')->toDateString()
 
         ];
 

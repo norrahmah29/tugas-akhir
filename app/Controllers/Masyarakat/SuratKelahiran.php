@@ -37,7 +37,7 @@ class SuratKelahiran extends BaseController
 
         ];
 
-        return view('masyarakat/surat/generate-domisili', $data);
+        return view('masyarakat/surat/generate-kelahiran', $data);
     }
 
     public function simpan()

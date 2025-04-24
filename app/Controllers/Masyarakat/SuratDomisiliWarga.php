@@ -5,6 +5,7 @@ namespace App\Controllers\Masyarakat;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\SuratDomwargaModel;
+use CodeIgniter\I18n\Time; // taruh di paling atas file controller
 
 class SuratDomisiliWarga extends BaseController
 {
@@ -36,11 +37,11 @@ class SuratDomisiliWarga extends BaseController
             'kecamatan'             => $this->request->getPost('kecamatan'),
             'kabupaten'             => $this->request->getPost('kabupaten'),
             'provinsi'              => $this->request->getPost('provinsi'),
-
+            'tanggal_pembuatan_surat' => Time::now('Asia/Makassar')->toDateString()
 
         ];
 
-        return view('masyarakat/surat/generate-domisili', $data);
+        return view('masyarakat/surat/generate-domisiliwarga', $data);
     }
 
     public function simpan()
@@ -59,7 +60,6 @@ class SuratDomisiliWarga extends BaseController
             'kecamatan'             => $this->request->getPost('kecamatan'),
             'kabupaten'             => $this->request->getPost('kabupaten'),
             'provinsi'              => $this->request->getPost('provinsi'),
-
 
         ];
 

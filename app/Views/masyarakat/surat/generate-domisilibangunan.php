@@ -226,13 +226,13 @@
                 <span class="t s4" style="left:110px;bottom:491px;letter-spacing:0.15px;">Provinsi</span>
                 <span class="t s4" style="left:320px;bottom:491px;">:</span>
                 <span class="t s4" style="left:350px;bottom:491px;letter-spacing:0.16px;"><?= $provinsi ?></span>
-
+                ph
                 <span class="t s4" style="left:110px;bottom:441px;letter-spacing:0.15px;">Bahwa Kantor tersebut di atas pada saat ini benar- benar berdomisili di Desa <?= $desa ?></span>
                 <span class="t s4" style="left:110px;bottom:410px;letter-spacing:0.05px;word-spacing:0.09px">RT.<?= $rt ?> Kec. <?= $kecamatan ?>, Kab. <?= $kabupaten ?> Prov. <?= $provinsi ?>. </span>
                 <span class="t s4" style="left:110px;bottom:378px;letter-spacing:0.16px;">Demikian Surat Keteranan ini dibuat dengan sebenarnya agar dapat dipergunakan </span>
                 <span class="t s4" style="left:110px;bottom:346px;letter-spacing:0.16px;">sebagaimana mestinya. </span>
                 <span class="t s4" style="left:515px;bottom:315px;letter-spacing:0.15px;">Dikeluarkan di Handil Suruk </span>
-                <span class="t s4" style="left:515px;bottom:283px;letter-spacing:0.07px;word-spacing:0.03px;">Pada Tanggal: 27 Juni 2024 </span>
+                <span class="t s4" style="left:515px;bottom:283px;letter-spacing:0.07px;word-spacing:0.03px;">Pada Tanggal: <?= $tanggal_pembuatan_surat ?> </span>
                 <span class="t s4" style="left:533px;bottom:252px;letter-spacing:0.18px;word-spacing:-0.01px;">Kepala Desa Handil Suruk </span>
                 <span class="t s3" style="left:567px;bottom:125px;letter-spacing:0.16px;word-spacing:0.03px;">KHALIKUL BASIR </span>
             </div>

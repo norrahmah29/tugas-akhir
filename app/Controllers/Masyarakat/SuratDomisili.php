@@ -5,7 +5,7 @@ namespace App\Controllers\Masyarakat;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\SuratDomisiliModel;
-use CodeIgniter\I18n\Time; // taruh di paling atas file controller kamu
+use CodeIgniter\I18n\Time; // taruh di paling atas file controller
 
 class SuratDomisili extends BaseController
 {
