@@ -5,6 +5,7 @@ namespace App\Controllers\Masyarakat;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\SuratKelahiranModel;
+use CodeIgniter\I18n\Time; // taruh di paling atas file controller
 
 class SuratKelahiran extends BaseController
 {
@@ -34,6 +35,7 @@ class SuratKelahiran extends BaseController
             'nama_ayah'    => $this->request->getPost('nama_ayah'),
             'nama_ibu'     => $this->request->getPost('nama_ibu'),
             'anak_ke'      => $this->request->getPost('anak_ke'),
+            'tanggal_pembuatan_surat' => Time::now('Asia/Makassar')->toDateString()
 
         ];
 

@@ -115,6 +115,14 @@
             font-family: LiberationSerif_1d;
             color: #000;
         }
+
+        .alamat {
+            display: inline-block;
+            max-width: 300px;
+            /* Ubah sesuai kebutuhan */
+            word-wrap: break-word;
+            white-space: normal;
+        }
     </style>
     <script id="metadata" type="application/json">
         {
@@ -172,8 +180,8 @@
                 <span class="t s4" style="left:109px;bottom:1048px;letter-spacing:-0.09px;">Tempat, Tanggal Lahir </span><span class="t s4" style="left:329px;bottom:1048px;">: </span><span class="t s4" style="left:342px;bottom:1048px;letter-spacing:-0.09px;"><?= $ttl ?></span>
                 <span class="t s4" style="left:109px;bottom:1019px;letter-spacing:-0.09px;">Jenis Kelamin </span><span class="t s4" style="left:329px;bottom:1019px;">: </span><span class="t s4" style="left:342px;bottom:1019px;letter-spacing:-0.09px;"><?= $jenis_kelamin ?> </span>
                 <span class="t s4" style="left:109px;bottom:990px;letter-spacing:-0.09px;">Pekerjaan </span><span class="t s4" style="left:329px;bottom:990px;">: </span><span class="t s4" style="left:342px;bottom:990px;letter-spacing:-0.08px;"><?= $pekerjaan ?> </span>
-                <span class="t s4" style="left:109px;bottom:961px;letter-spacing:-0.1px;">Alamat </span><span class="t s4" style="left:329px;bottom:961px;">: </span><span class="t s4" style="left:342px;bottom:961px;letter-spacing:-0.09px;">Jl. Suka Damai Rt 03 Rw 01 Desa Handil Suruk </span>
-                <span class="t s4" style="left:343px;bottom:932px;letter-spacing:-0.09px;">Kec. Bumi Makmur Kab. Tanah Laut Prov. Kalimantan Selatan </span>
+                <span class="t s4" style="left:109px;bottom:961px;letter-spacing:-0.1px;">Alamat </span><span class="t s4" style="left:329px;bottom:961px;">: </span><span class="t s4" style="left:342px;bottom:961px;letter-spacing:-0.09px;"><?= $alamat ?> </span>
+                <span class="t s4" style="left:343px;bottom:932px;letter-spacing:-0.09px;"> </span>
                 <span class="t s4" style="left:54px;bottom:903px;letter-spacing:-0.08px;">Adalah Anak Dari </span>
                 <span class="t s4" style="left:109px;bottom:874px;letter-spacing:-0.1px;">Nama Ayah Kandung </span><span class="t s4" style="left:329px;bottom:874px;">: </span><span class="t s3" style="left:342px;bottom:874px;letter-spacing:-0.14px;"><?= $nama_ayah ?> </span><span class="t s3" style="left:460px;bottom:874px;letter-spacing:-0.12px;"> </span>
                 <span class="t s4" style="left:109px;bottom:845px;letter-spacing:-0.1px;">Nama Ibu Kandung </span><span class="t s4" style="left:329px;bottom:845px;">: </span><span class="t s3" style="left:342px;bottom:845px;letter-spacing:-0.12px;"><?= $nama_ibu ?> </span>

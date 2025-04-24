@@ -5,6 +5,7 @@ namespace App\Controllers\Masyarakat;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\SuratSKCKModel;
+use CodeIgniter\I18n\Time; // taruh di paling atas file controller
 
 class SuratPengantarSKCK extends BaseController
 {
@@ -33,7 +34,8 @@ class SuratPengantarSKCK extends BaseController
             'agama'               => $this->request->getPost('agama'),
             'pekerjaan'           => $this->request->getPost('pekerjaan'),
             'nik'                 => $this->request->getPost('nik'),
-            'alamat'              => $this->request->getPost('alamat')
+            'alamat'              => $this->request->getPost('alamat'),
+            'tanggal_pembuatan_surat' => Time::now('Asia/Makassar')->toDateString()
         ];
 
         return view('masyarakat/surat/generate-domisili', $data);

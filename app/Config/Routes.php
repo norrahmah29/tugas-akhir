@@ -113,7 +113,7 @@ $routes->post('masyarakat/ajukansurat/suratkelahiran/simpan', 'Masyarakat\SuratK
 
 // surat keterangan kematian
 $routes->get('masyarakat/ajukansurat/suratketerangankematian', 'Masyarakat\SuratKeteranganKematian::index');
-$routes->post('masyarakat/ajukansurat/suratketerangankematian/generatesurat', 'Masyarakat\SuratKeteranganKematian::generateSurat');
+$routes->post('masyarakat/ajukansurat/keterangankematian/generatesurat', 'Masyarakat\SuratKeteranganKematian::generateSurat');
 $routes->post('masyarakat/ajukansurat/suratketerangankematian/simpan', 'Masyarakat\SuratKeteranganKematian::simpan');
 
 // surat skck

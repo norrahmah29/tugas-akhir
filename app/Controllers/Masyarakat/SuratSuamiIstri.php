@@ -5,6 +5,8 @@ namespace App\Controllers\Masyarakat;
 use App\Controllers\BaseController;
 use App\Models\SuratSuamiIstriModel;
 
+use CodeIgniter\I18n\Time; // taruh di paling atas file controller
+
 class SuratSuamiIstri extends BaseController
 {
     protected $model;

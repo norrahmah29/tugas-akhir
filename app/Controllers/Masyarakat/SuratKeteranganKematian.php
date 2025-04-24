@@ -5,6 +5,7 @@ namespace App\Controllers\Masyarakat;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\SuratKematianModel;
+use CodeIgniter\I18n\Time; // taruh di paling atas file controller
 
 class SuratKeteranganKematian extends BaseController
 {
@@ -35,9 +36,10 @@ class SuratKeteranganKematian extends BaseController
             'jam_kematian'      => $this->request->getPost('jam_kematian'),
             'tempat_kematian'   => $this->request->getPost('tempat_kematian'),
             'penyebab_kematian' => $this->request->getPost('penyebab_kematian'),
+            'tanggal_pembuatan_surat' => Time::now('Asia/Makassar')->toDateString()
         ];
 
-        return view('masyarakat/surat/generate-domisili', $data);
+        return view('masyarakat/surat/generate-kematian', $data);
     }
 
     public function simpan()

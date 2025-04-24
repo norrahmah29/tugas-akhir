@@ -24,7 +24,7 @@
                             <div class="row mb-2">
                                 <label class="col-sm-2 col-form-label">Nomor Surat</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="no_surat" placeholder="Contoh: 400.12.2.2/54/Handil Suruk/2024" required>
+                                    <input type="text" class="form-control" name="no_surat" required>
                                 </div>
                             </div>
 
@@ -59,7 +59,7 @@
                             <div class="row mb-2">
                                 <label class="col-sm-2 col-form-label">Pekerjaan <span class="text-danger">*</span></label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="status_pekerjaan" required>
+                                    <input type="text" class="form-control" name="pekerjaan" required>
                                 </div>
                             </div>
 

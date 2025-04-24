@@ -17,7 +17,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Surat Keterangan Kematian</h5>
 
-                        <form action="/masyarakat/ajukansurat/keterangan-kematian" method="post">
+                        <form action="/masyarakat/ajukansurat/keterangankematian/generatesurat" method="post">
                             <?= csrf_field() ?>
 
                             <!-- Informasi Surat -->

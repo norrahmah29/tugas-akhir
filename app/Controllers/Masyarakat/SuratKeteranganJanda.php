@@ -5,6 +5,7 @@ namespace App\Controllers\Masyarakat;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\SuratJandaModel;
+use CodeIgniter\I18n\Time; // taruh di paling atas file controller
 
 class SuratKeteranganJanda extends BaseController
 {
