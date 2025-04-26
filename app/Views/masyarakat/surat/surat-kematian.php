@@ -42,7 +42,7 @@
                                 <label class="col-sm-2 col-form-label">Jenis Kelamin <span class="text-danger">*</span></label>
                                 <div class="col-sm-10">
                                     <select class="form-control" name="jenis_kelamin" required>
-                                        <option value="" disabled selected>Pilih Jenis Kelamin</option>
+                                        <option value="">-- Pilih Jenis Kelamin --</option>
                                         <option value="Laki-laki">Laki-laki</option>
                                         <option value="Perempuan">Perempuan</option>
                                     </select>

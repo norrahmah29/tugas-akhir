@@ -36,7 +36,7 @@ class SuratBelumBekerja extends BaseController
             'alamat'           => $this->request->getPost('alamat'),
         ];
 
-        return view('masyarakat/surat/generate-domisili', $data);
+        return view('masyarakat/surat/generate-belumbekerja', $data);
     }
 
     public function simpan()

@@ -37,13 +37,13 @@ $routes->post('/update_suratkehilangan/(:num)', 'SuratKeteranganHilang::update_s
 $routes->get('/delete_suratkehilangan/(:num)', 'SuratKeteranganHilang::delete_suratkehilangan/$1');
 
 // Route untuk surat keterangan usaha
-$routes->get('/admin/tabel_keteranganusaha', 'SuratKeteranganUsaha::index');
-$routes->get('/keteranganusaha', 'SuratKeteranganUsaha::index');
-$routes->get('/form_keteranganusaha', 'SuratKeteranganUsaha::form_keteranganusaha');
-$routes->post('/tambah_keteranganusaha', 'SuratKeteranganUsaha::tambah_keteranganusaha');
-$routes->get('/edit_keteranganusaha/(:num)', 'SuratKeteranganUsaha::edit_keteranganusaha/$1');
-$routes->post('/update_keteranganusaha/(:num)', 'SuratKeteranganUsaha::update_keteranganusaha/$1');
-$routes->get('/delete_keteranganusaha/(:num)', 'SuratKeteranganUsaha::delete_keteranganusaha/$1');
+//$routes->get('/admin/tabel_keteranganusaha', 'SuratKeteranganUsaha::index');
+//$routes->get('/keteranganusaha', 'SuratKeteranganUsaha::index');
+//$routes->get('/form_keteranganusaha', 'SuratKeteranganUsaha::form_keteranganusaha');
+//$routes->post('/tambah_keteranganusaha', 'SuratKeteranganUsaha::tambah_keteranganusaha');
+//$routes->get('/edit_keteranganusaha/(:num)', 'SuratKeteranganUsaha::edit_keteranganusaha/$1');
+//$routes->post('/update_keteranganusaha/(:num)', 'SuratKeteranganUsaha::update_keteranganusaha/$1');
+//$routes->get('/delete_keteranganusaha/(:num)', 'SuratKeteranganUsaha::delete_keteranganusaha/$1');
 
 
 
@@ -52,12 +52,12 @@ $routes->get('/delete_keteranganusaha/(:num)', 'SuratKeteranganUsaha::delete_ket
 $routes->get('admin/tabel_ahliwaris', 'SuratAhliWaris::index');
 
 // Route untuk surat tidak mampu
-$routes->get('/surattidakmampu', 'SuratTidakMampu::index');
-$routes->get('/surattidakmampu/form_tidak_mampu', 'SuratTidakMampu::form_tidak_mampu');
-$routes->post('/surattidakmampu/simpan', 'SuratTidakMampu::simpan');
-$routes->get('/surattidakmampu/edit/(:num)', 'SuratTidakMampu::edit/$1');
-$routes->post('/surattidakmampu/update/(:num)', 'SuratTidakMampu::update/$1');
-$routes->get('/surattidakmampu/delete/(:num)', 'SuratTidakMampu::delete/$1');
+//$routes->get('/surattidakmampu', 'SuratTidakMampu::index');
+//$routes->get('/surattidakmampu/form_tidak_mampu', 'SuratTidakMampu::form_tidak_mampu');
+//$routes->post('/surattidakmampu/simpan', 'SuratTidakMampu::simpan');
+//$routes->get('/surattidakmampu/edit/(:num)', 'SuratTidakMampu::edit/$1');
+//$routes->post('/surattidakmampu/update/(:num)', 'SuratTidakMampu::update/$1');
+//$routes->get('/surattidakmampu/delete/(:num)', 'SuratTidakMampu::delete/$1');
 
 
 
@@ -85,7 +85,7 @@ $routes->get('/suamiistri/delete/(:num)', 'SuratSuamiIstri::delete/$1');
 $routes->get('masyarakat/dashboard', 'Masyarakat\DashboardMasyarakat::index');
 $routes->get('masyarakat/ajukansurat', 'Masyarakat\AjukanSurat::index');
 
-// surat domisili
+// surat domisili tani
 $routes->get('masyarakat/ajukansurat/suratdomisili', 'Masyarakat\SuratDomisili::index');
 $routes->post('masyarakat/ajukansurat/suratdomisili/generatesurat', 'Masyarakat\SuratDomisili::generateSurat');
 $routes->post('masyarakat/ajukansurat/suratdomisili/simpan', 'Masyarakat\SuratDomisili::simpan');
@@ -99,7 +99,6 @@ $routes->post('masyarakat/ajukansurat/suratdomisilibangunan/simpan', 'Masyarakat
 $routes->get('masyarakat/ajukansurat/suratdomisiliwarga', 'Masyarakat\SuratDomisiliWarga::index');
 $routes->post('masyarakat/ajukansurat/suratdomisiliwarga/generatesurat', 'Masyarakat\SuratDomisiliWarga::generateSurat');
 $routes->post('masyarakat/ajukansurat/suratdomisiliwarga/simpan', 'Masyarakat\SuratDomisiliWarga::simpan');
-
 
 // surat belum bekerja 
 $routes->get('masyarakat/ajukansurat/suratbelumbekerja', 'Masyarakat\SuratBelumBekerja::index');
@@ -116,6 +115,18 @@ $routes->get('masyarakat/ajukansurat/suratketerangankematian', 'Masyarakat\Surat
 $routes->post('masyarakat/ajukansurat/keterangankematian/generatesurat', 'Masyarakat\SuratKeteranganKematian::generateSurat');
 $routes->post('masyarakat/ajukansurat/suratketerangankematian/simpan', 'Masyarakat\SuratKeteranganKematian::simpan');
 
+// surat tidak mampu
+$routes->get('masyarakat/ajukansurat/surattidakmampu', 'Masyarakat\SuratTidakMampu::index');
+$routes->post('masyarakat/ajukansurat/surattidakmampu/generatesurat', 'Masyarakat\SuratTidakMampu::generateSurat');
+$routes->post('masyarakat/ajukansurat/surattidakmampu/simpan', 'Masyarakat\SuratTidakMampu::simpan');
+
+
+// surat keterangan usaha
+$routes->get('masyarakat/ajukansurat/suratusaha', 'Masyarakat\SuratUsaha::index');
+$routes->post('masyarakat/ajukansurat/suratusaha/generatesurat', 'Masyarakat\SuratUsaha::generateSurat');
+$routes->post('masyarakat/ajukansurat/suratusaha/simpan', 'Masyarakat\SuratUsaha::simpan');
+
+
 // surat skck
 $routes->get('masyarakat/ajukansurat/suratpengantarskck', 'Masyarakat\SuratPengantarSKCK::index');
 $routes->post('masyarakat/ajukansurat/suratpengantarskck/generatesurat', 'Masyarakat\SuratPengantarSKCK::generateSurat');
@@ -126,6 +137,13 @@ $routes->get('masyarakat/ajukansurat/suratketeranganjanda', 'Masyarakat\SuratKet
 $routes->post('masyarakat/ajukansurat/suratketeranganjanda/generatesurat', 'Masyarakat\SuratKeteranganJanda::generateSurat');
 $routes->post('masyarakat/ajukansurat/suratketeranganjanda/simpan', 'Masyarakat\SuratKeteranganJanda::simpan');
 
+// surat pindah
+$routes->get('masyarakat/ajukansurat/suratpindah', 'Masyarakat\SuratPindah::index');
+$routes->post('masyarakat/ajukansurat/suratpindah/generatesurat', 'Masyarakat\SuratPindah::generateSurat');
+$routes->post('masyarakat/ajukansurat/suratpindah/simpan', 'Masyarakat\SuratPindah::simpan');
+
+
+
 // Surat kehilangan
 $routes->get('masyarakat/ajukansurat/suratkehilangan', 'Masyarakat\SuratKehilangan::index');
 
@@ -135,8 +153,6 @@ $routes->post('masyarakat/ajukansurat/suratsuamiistri/generatesurat', 'Masyaraka
 $routes->post('masyarakat/ajukansurat/suratsuamiistri/simpan', 'Masyarakat\SuratSuamiIstri::simpan');
 
 
-// surat keterangan usaha
-$routes->get('masyarakat/ajukansurat/suratketeranganusaha', 'Masyarakat\SuratUsaha::index');
 
 // surat ahli waris
 $routes->get('masyarakat/ajukansurat/suratahliwaris', 'Masyarakat\SuratWaris::index');

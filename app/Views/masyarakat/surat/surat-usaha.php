@@ -17,7 +17,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Surat Keterangan Usaha</h5>
 
-                        <form action="/tambah_keteranganusaha" method="post">
+                        <form action="/masyarakat/ajukansurat/suratusaha/generatesurat" method="post">
                             <?= csrf_field() ?>
 
                             <!-- Informasi Kepala Desa -->
@@ -34,7 +34,7 @@
                             <div class="row mb-3">
                                 <label class="col-sm-2 col-form-label">Nama <span class="text-danger">*</span></label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="nama_pemohon" required>
+                                    <input type="text" class="form-control" name="nama" required>
                                 </div>
                             </div>
 
@@ -110,6 +110,8 @@
                                     <input type="text" class="form-control" name="sejak_tahun" placeholder="Contoh: 2020 Sampai Sekarang" required>
                                 </div>
                             </div>
+
+
 
                             <!-- Tombol Aksi -->
                             <div class="row mb-3">

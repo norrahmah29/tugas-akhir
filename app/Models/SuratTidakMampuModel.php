@@ -6,22 +6,19 @@ use CodeIgniter\Model;
 
 class SuratTidakMampuModel extends Model
 {
-    protected $table = 'tabel_tidakmampu'; // Sesuai nama tabel di database
-    protected $primaryKey = 'id_surattidakmampu';
+    protected $table = 'surat_tidakmampu';
+    protected $primaryKey = 'id_tidakmampu';
+
     protected $allowedFields = [
         'no_surat',
         'nama',
+        'bin_binti',
         'nik',
-        'tempat_lahir',
-        'tanggal_lahir',
+        'ttl',
         'jenis_kelamin',
         'agama',
+        'pekerjaan',
         'alamat',
-        'status_kemampuan',
-        'keperluan',
-        'tanggal_surat',
-        'nama_kepala_desa',
-        'tanda_tangan',
-        'stempel'
+        'tanggal_pembuatan_surat',
     ];
 }

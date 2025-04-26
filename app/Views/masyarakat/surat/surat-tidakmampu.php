@@ -17,7 +17,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Surat Keterangan Tidak Mampu</h5>
 
-                        <form action="/tambah_surat_tidak_mampu" method="post">
+                        <form action="/masyarakat/ajukansurat/surattidakmampu/generatesurat" method="post">
                             <?= csrf_field() ?>
 
                             <!-- No Surat -->
